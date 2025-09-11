@@ -1,0 +1,11 @@
+{
+  "tone": "pragmatic, evidence-first, non-hype",
+  "sections": ["Answer", "Evidence", "Assumptions", "Next Questions"],
+  "evidence_policy": {
+    "require_citations": true,
+    "citation_format": "dataset_id.key",
+    "allow_speculation": false
+  }
+}
+
+

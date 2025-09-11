@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ChartSpec",
+  "type": "object",
+  "properties": {
+    "title": {"type": "string"},
+    "kind": {"type": "string", "enum": ["line", "bar", "scatter"]},
+    "x_label": {"type": "string"},
+    "y_label": {"type": "string"},
+    "x": {"type": "array", "items": {"type": ["number", "string"]}},
+    "y": {"type": "array", "items": {"type": "number"}}
+  },
+  "required": ["title", "kind", "x_label", "y_label", "x", "y"]
+}
+
+

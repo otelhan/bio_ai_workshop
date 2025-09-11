@@ -1,0 +1,24 @@
+{
+  "assumptions": {
+    "batch_size_units": 1000,
+    "yield_pct": 0.92,
+    "price_per_unit": 25.0,
+    "labor_per_batch": 1200.0,
+    "substrate_per_batch": 800.0,
+    "energy_per_batch": 350.0,
+    "depreciation_per_batch": 200.0
+  },
+  "calc": {
+    "revenue_per_batch": 23000.0,
+    "cogs_per_batch": 2550.0,
+    "gross_margin_pct": 0.889
+  },
+  "sensitivities": {
+    "price_minus_10pct_gm": 0.85,
+    "price_plus_10pct_gm": 0.92,
+    "yield_minus_5pts_gm": 0.86,
+    "yield_plus_5pts_gm": 0.91
+  }
+}
+
+
