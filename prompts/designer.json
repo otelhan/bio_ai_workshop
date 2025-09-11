@@ -13,7 +13,7 @@
   "datasets": [
     {
       "id": "kpis_designer",
-      "url": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/data/kpis_designer.json"
+      "url": "https://raw.githubusercontent.com/otelhan/bio_ai_workshop/main/data/kpis_designer.json"
     }
   ]
 }

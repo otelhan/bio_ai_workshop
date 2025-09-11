@@ -12,7 +12,7 @@
   "datasets": [
     {
       "id": "unit_economics",
-      "url": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/data/unit_economics.json"
+      "url": "https://raw.githubusercontent.com/otelhan/bio_ai_workshop/main/data/unit_economics.json"
     }
   ]
 }
