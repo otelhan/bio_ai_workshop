@@ -1,0 +1,21 @@
+Sample_ID,Regularity_Score,Tensile_Strength_MPa,Elongation_at_Break_Percent,Abrasion_Resistance_Cycles,Dominant_Color_Zone,Temperature_Gradient_Intensity,Notes
+IMG_001,0.4,45,8.2,850,Mixed_Hot_Cold,High,Complex pattern with sharp hot-cold transitions
+IMG_002,0.7,65,6.5,1200,Moderate_Warm,Medium,Good horizontal stratification indicating uniform properties
+IMG_003,0.3,35,12.8,750,Hot_Dominant,High,Highly irregular with multiple hot spots
+IMG_004,0.8,75,4.2,950,Cool_to_Moderate,Low,Very uniform gradient suggests excellent tensile properties
+IMG_005,0.9,85,3.8,1100,Cool_Dominant,Very_Low,Extremely smooth gradient indicates superior strength
+IMG_006,0.95,90,3.2,1050,Cool_Dominant,Very_Low,Nearly perfect thermal uniformity
+IMG_007,0.2,25,15.6,600,Hot_Mixed,Very_High,Chaotic thermal pattern with poor regularity
+IMG_008,0.5,52,7.8,900,Mixed_Zones,Medium,Moderate complexity with distinct thermal zones
+IMG_009,0.85,82,4.1,980,Cool_to_Warm,Low,Clean linear gradient showing good material consistency
+IMG_010,0.45,48,9.1,820,Warm_Dominant,High,Mixed thermal zones with moderate irregularity
+IMG_011,0.45,48,9.1,820,Warm_Dominant,High,Similar pattern to IMG_010 suggesting consistent batch
+IMG_012,0.25,28,14.2,650,Hot_Dominant,Very_High,Multiple hot spots indicating material inconsistencies
+IMG_013,0.4,45,8.2,850,Mixed_Hot_Cold,High,Similar complexity to IMG_001 thermal signature
+IMG_014,0.6,58,7.2,1150,Cool_to_Green,Medium,Good green content suggests strong abrasion resistance
+IMG_015,0.75,68,5.8,1300,Cool_with_Artifacts,Medium,Sharp boundaries but overall good uniformity
+IMG_016,0.8,72,5.2,1250,Cool_Dominant,Low,Excellent regularity with minimal thermal variation
+IMG_017,0.92,88,3.5,1080,Cool_Gradient,Very_Low,Superior linear gradient indicating premium material
+IMG_018,0.78,70,5.5,1280,Cool_with_Boundaries,Low,Sharp but organized thermal boundaries
+IMG_019,0.88,86,3.7,1090,Cool_Linear,Very_Low,Excellent linear thermal distribution
+IMG_020,0.35,38,11.5,780,Hot_Irregular,High,Irregular hot zones suggesting material defects
