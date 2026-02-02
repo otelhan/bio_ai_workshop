@@ -126,18 +126,39 @@
         <h2>AI Designer</h2>
         <p class="lead">Balance performance, sustainability, and aesthetics. Ask better questions, review evidence, and visualize trade-offs.</p>
         <div class="spacer"></div>
-        <div class="iframe-wrap" id="udify-chatbot-designer">
-          <div id="udify-widget-IcOWbafZU4OtCCws" style="width: 100%; height: 100%; min-height: 700px;"></div>
-        </div>
         <script>
-          (function() {
-            var script = document.createElement('script');
-            script.src = 'https://udify.app/embed.js';
-            script.setAttribute('data-bot-id', 'IcOWbafZU4OtCCws');
-            script.setAttribute('data-container', 'udify-widget-IcOWbafZU4OtCCws');
-            document.head.appendChild(script);
-          })();
+          window.difyChatbotConfig = {
+            token: '1SDucublKksaAA9n',
+            inputs: {
+              // You can define the inputs from the Start node here
+              // key is the variable name
+              // e.g.
+              // name: "NAME"
+            },
+            systemVariables: {
+              // user_id: 'YOU CAN DEFINE USER ID HERE',
+              // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+            },
+            userVariables: {
+              // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+              // name: 'YOU CAN DEFINE USER NAME HERE',
+            },
+          }
         </script>
+        <script
+          src="https://udify.app/embed.min.js"
+          id="1SDucublKksaAA9n"
+          defer>
+        </script>
+        <style>
+          #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+          }
+          #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+          }
+        </style>
       </div>
     </section>
 
