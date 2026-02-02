@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Personas — Designer • Farmer • CFO</title>
+    <style>
+      :root {
+        --bg-dark: #0e1117;
+        --ink: #e6e6e6;
+        --muted: #b8c1cc;
+        --brand: #6ee7ff;
+        --nav-bg: rgba(14, 17, 23, 0.7);
+        --overlay: rgba(0, 0, 0, 0.25);
+        --maxw: 1120px;
+        --error-bg: rgba(220, 38, 38, 0.1);
+        --error-border: rgba(220, 38, 38, 0.3);
+        --button-bg: rgba(110, 231, 255, 0.1);
+        --button-border: rgba(110, 231, 255, 0.3);
+      }
+      html, body { height: 100%; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: var(--ink);
+        background: var(--bg-dark);
+      }
+      .nav {
+        position: sticky; top: 0; z-index: 50;
+        display: flex; gap: 10px; align-items: center; justify-content: center;
+        padding: 12px 16px; background: var(--nav-bg); backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+      .nav a {
+        color: var(--ink); text-decoration: none; padding: 8px 14px; border-radius: 999px;
+        border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s ease;
+      }
+      .nav a:hover, .nav a.active { 
+        border-color: var(--brand); color: var(--brand); 
+        transform: translateY(-1px); box-shadow: 0 4px 8px rgba(110, 231, 255, 0.2);
+      }
+
+      .section {
+        position: relative; min-height: 100vh; display: grid; align-items: center;
+        padding: 80px 20px; isolation: isolate;
+      }
+      .section .bg { 
+        position: absolute; inset: 0; z-index: -2; background-size: cover; 
+        background-position: center; background-repeat: no-repeat; 
+      }
+      .section .overlay { position: absolute; inset: 0; z-index: -1; background: var(--overlay); }
+
+      .container { max-width: var(--maxw); margin: 0 auto; }
+      h1, h2 { margin: 0 0 10px 0; letter-spacing: 0.2px; font-size: 2.5rem; }
+      p.lead { margin: 0 0 20px 0; color: var(--muted); max-width: 70ch; font-size: 1.1rem; line-height: 1.6; }
+
+      .iframe-wrap {
+        position: relative; width: 100%; height: 700px; border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 12px; overflow: hidden; background: rgba(0,0,0,0.25);
+        transition: all 0.3s ease;
+      }
+      .iframe-wrap:hover { border-color: var(--brand); }
+      .iframe-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+      .error-message {
+        position: absolute; inset: 0; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; text-align: center;
+        background: var(--error-bg); border: 1px solid var(--error-border);
+        border-radius: 12px; padding: 40px 20px;
+      }
+
+      .error-icon {
+        font-size: 3rem; margin-bottom: 16px; opacity: 0.7;
+      }
+
+      .error-title {
+        font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; color: var(--ink);
+      }
+
+      .error-text {
+        color: var(--muted); margin-bottom: 20px; line-height: 1.5;
+      }
+
+      .open-chat-btn {
+        display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px;
+        background: var(--button-bg); border: 1px solid var(--button-border);
+        color: var(--brand); text-decoration: none; border-radius: 8px;
+        font-weight: 500; transition: all 0.2s ease;
+      }
+
+      .open-chat-btn:hover {
+        background: var(--brand); color: var(--bg-dark);
+        transform: translateY(-2px); box-shadow: 0 6px 20px rgba(110, 231, 255, 0.3);
+      }
+
+      .spacer { height: 22px; }
+
+      @media (max-width: 720px) {
+        .section { padding: 72px 14px; }
+        p.lead { max-width: none; }
+        h1, h2 { font-size: 2rem; }
+        .error-message { padding: 30px 15px; }
+      }
+
+      footer {
+        text-align: center; color: var(--muted); padding: 20px 12px; font-size: 0.95rem;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+      footer a { color: var(--brand); text-decoration: none; }
+      footer a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" aria-label="Personas">
+      <a href="#designer" id="tab-designer">Designer</a>
+      <a href="#farmer" id="tab-farmer">Farmer</a>
+      <a href="#cfo" id="tab-cfo">CFO</a>
+    </nav>
+
+    <!-- Designer Section -->
+    <section id="designer" class="section">
+      <div class="bg" style="background-image: url('assets/designer_bg.png');"></div>
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>AI Designer</h2>
+        <p class="lead">Balance performance, sustainability, and aesthetics. Ask better questions, review evidence, and visualize trade-offs.</p>
+        <div class="spacer"></div>
+        <div class="iframe-wrap">
+          <iframe
+          src="https://udify.app/chatbot/IcOWbafZU4OtCCws"
+          style="width: 100%; height: 100%; min-height: 700px"
+          frameborder="0"
+          allow="microphone">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Farmer Section -->
+    <section id="farmer" class="section">
+      <div class="bg" style="background-image: url('assets/farmer_bg.png');"></div>
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>AI Farmer</h2>
+        <p class="lead">Optimize yield, quality, and cycle time. Surface SOP parameters, identify bottlenecks, and propose safe adjustments.</p>
+        <div class="spacer"></div>
+        <div class="iframe-wrap">
+          <iframe
+            src="https://udify.app/chatbot/Oy5nZMxV2BbFuBLL"
+            style="width: 100%; height: 100%; min-height: 700px"
+            frameborder="0"
+            allow="microphone">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CFO Section -->
+    <section id="cfo" class="section">
+      <div class="bg" style="background-image: url('assets/cfo_bg.png');"></div>
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>AI CFO</h2>
+        <p class="lead">Focus on business readiness: unit economics, pricing, COGS, margin, and runway. Ground decisions in evidence.</p>
+        <div class="spacer"></div>
+        <div class="iframe-wrap">
+            <iframe
+            src="https://udify.app/chatbot/2QmXXyPs4xB1EjoL"
+            style="width: 100%; height: 100%; min-height: 700px"
+            frameborder="0"
+            allow="microphone">
+           </iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="margin-bottom: 6px;">
+        <a href="https://docs.google.com/presentation/d/1JEv9BXDhjZXvaHseBzC1iAT5OcTIoba-5Tt-wzRse1s/edit?usp=sharing" target="_blank" rel="noopener">Workshop slides</a>
+      </div>
+      © 2025 Orkan Telhan
+    </footer>
+
+    <script>
+      // Highlight active tab on scroll
+      const sections = [
+        { id: 'designer', el: document.getElementById('designer'), tab: document.getElementById('tab-designer') },
+        { id: 'farmer', el: document.getElementById('farmer'), tab: document.getElementById('tab-farmer') },
+        { id: 'cfo', el: document.getElementById('cfo'), tab: document.getElementById('tab-cfo') },
+      ];
+      
+      const onScroll = () => {
+        const y = window.scrollY + 100; // offset for sticky nav
+        let current = sections[0];
+        for (const s of sections) {
+          if (s.el.offsetTop <= y) current = s;
+        }
+        sections.forEach(s => s.tab.classList.toggle('active', s === current));
+      };
+      
+      document.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    </script>
+  </body>
+  </html>
